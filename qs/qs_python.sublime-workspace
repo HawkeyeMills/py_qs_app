@@ -1,0 +1,696 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"el",
+				"else"
+			],
+			[
+				"Metric",
+				"Metric"
+			],
+			[
+				"su",
+				"summary"
+			],
+			[
+				"has",
+				"hashToIterate"
+			],
+			[
+				"end",
+				"end"
+			],
+			[
+				"obj",
+				"obj_dailygrade"
+			],
+			[
+				"metr",
+				"metric_config_id"
+			],
+			[
+				"metric_",
+				"metric_configs"
+			],
+			[
+				"default",
+				"defaultvalue"
+			],
+			[
+				"metric",
+				"metric_config_id"
+			],
+			[
+				"MetricConfig",
+				"metric_configs"
+			],
+			[
+				"st_mg_",
+				"st_mg_percentvalue"
+			],
+			[
+				"metriccon",
+				"metricconfigs"
+			],
+			[
+				"dailygrade",
+				"dailygradeid"
+			],
+			[
+				"st_gra",
+				"st_gradeval"
+			],
+			[
+				"find",
+				"find_by"
+			],
+			[
+				"dailygra",
+				"dailygradeid"
+			],
+			[
+				"value",
+				"valueToUpsert"
+			],
+			[
+				"m_y",
+				"m_yesterday"
+			],
+			[
+				"m_yese",
+				"m_yesterdayObj"
+			],
+			[
+				"m_ye",
+				"m_yesterday"
+			],
+			[
+				"m_yesre",
+				"m_yesterdayValue"
+			],
+			[
+				"to",
+				"to_date"
+			],
+			[
+				"mg_",
+				"mg_percentvalue"
+			],
+			[
+				"gc_goa",
+				"gc_goalrow"
+			],
+			[
+				"gradecal",
+				"grade_calc_id"
+			],
+			[
+				"metric_cn",
+				"metric_config_id"
+			],
+			[
+				"metric_con",
+				"metric_config_id"
+			],
+			[
+				"metrics",
+				"metricsToShow"
+			],
+			[
+				"m",
+				"metricdate"
+			],
+			[
+				"fb",
+				"fbmetrics_path"
+			],
+			[
+				"fbm",
+				"fbmetrics_path"
+			],
+			[
+				"date",
+				"dateToShow"
+			],
+			[
+				"Grade",
+				"GradeConfig"
+			],
+			[
+				"grade",
+				"grade_calc_id"
+			],
+			[
+				"metri",
+				"metricdate"
+			],
+			[
+				"met",
+				"metricdate"
+			],
+			[
+				"metricdate",
+				"metricdate_value"
+			],
+			[
+				"metric_conf",
+				"metric_config_params"
+			],
+			[
+				"updat",
+				"updateable"
+			],
+			[
+				"h",
+				"hashToIterate"
+			],
+			[
+				"metricConfig",
+				"metricConfigID"
+			],
+			[
+				"metricC",
+				"metricConfig"
+			],
+			[
+				"id",
+				"metricConfigID"
+			],
+			[
+				"metricConfi",
+				"metricConfigIDObj"
+			],
+			[
+				"make_",
+				"make_metricconfigs"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"order",
+				"orderby"
+			],
+			[
+				"me",
+				"metrics"
+			],
+			[
+				"metricconf",
+				"metricconfigs"
+			],
+			[
+				"n",
+				"new"
+			],
+			[
+				"pag",
+				"paginate"
+			],
+			[
+				"M",
+				"Metric"
+			],
+			[
+				"gr",
+				"grayLight"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"last_filter": "installpackage",
+		"selected_items":
+		[
+			[
+				"installpackage",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 200.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/brandonmills/development/python/quantifiedself",
+		"/Users/brandonmills/development/python/quantifiedself/qsapp"
+	],
+	"file_history":
+	[
+		"/Users/brandonmills/development/python/quantifiedself/qs/settings.py",
+		"/Users/brandonmills/.profile",
+		"/Users/brandonmills/.zshrc",
+		"/Users/brandonmills/.zprofile",
+		"/Users/brandonmills/.bash_profile",
+		"/Users/brandonmills/development/qs_app/lib/fitbitclient.rb",
+		"/Users/brandonmills/Downloads/businessone-dummy/redux_options.json",
+		"/Users/brandonmills/development/qs_app/Gemfile",
+		"/Users/brandonmills/development/qs_app/config/database.yml",
+		"/Users/brandonmills/development/qs_app/app/extensions/active_record_extension.rb",
+		"/Users/brandonmills/development/quantifiedself/Gemfile",
+		"/Users/brandonmills/development/QuantifiedSelfV2.sublime-project",
+		"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app/qs_app.sublime-workspace",
+		"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app/lib/fitbitclient.rb",
+		"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app/insert_metric_configs",
+		"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app/54695cd45973caf2be000010@qs-quantifiedself.rhcloud.com",
+		"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app/Gemfile.lock",
+		"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app/config.ru",
+		"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app/iquantify_prod_data",
+		"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app/latest.dump",
+		"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app/user.rb",
+		"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app/Guardfile",
+		"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app/Gemfile",
+		"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app/Rakefile",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/QS.sublime-workspace",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/lib/tasks/sample_data.rake",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/layouts/_header.html.erb",
+		"/Volumes/uhdstorage/projects/The Admin Pool/AD Stuff/reconfig-ra-mailing-lists.vbs",
+		"/Users/btmills/Dropbox/Fall Fun Fest/2015/schedule.txt",
+		"/Users/btmills/Desktop/LoadClinical",
+		"/Users/btmills/Downloads/brandon@brandonmills.me.ical/Brandon Mills (.me)_brandon@brandonmills.me.txt",
+		"/Users/btmills/Downloads/form/form.html",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/log/development.log",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/db/migrate/20140820145205_create_metrics.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/Gemfile",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/users/show.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/insert_metric_configs",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metric_configs/edit.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/terminal/moreRHCInstall",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/terminal/movedataRHC",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/controllers/users_controller.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/controllers/metric_grades_controller.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metric_grades/index.html.erb",
+		"/Users/btmills/Dropbox/index.html.erb",
+		"/Users/btmills/Desktop/custommetrics.csv",
+		"/Users/btmills/Desktop/custom.sql",
+		"/Users/btmills/Desktop/console_scratch",
+		"/Users/btmills/Desktop/add quotes.sublime-macro",
+		"/Users/btmills/Desktop/iquantify_prod",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/config/routes.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/shared/_grades.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/models/daily_grade.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/sessions/new.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/assets/stylesheets/custom.css.scss",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/models/grade_config.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/models/metric_config.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/models/metric_grade.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/models/metric.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/models/user.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metrics/edit.html.erb",
+		"/Users/btmills/Desktop/temp.html.erb",
+		"/Users/btmills/Library/Application Support/Sublime Text 3/Packages/FileDiffs/FileDiffs.sublime-settings",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/controllers/metric_configs_controller.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/README.rdoc",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/Gemfile.lock",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/config/database.yml",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/db/migrate/20140820181406_create_metric_configs.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/.gitignore",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/config.ru",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/README.md",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qsapp/Gemfile",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/.openshift/markers/README.md",
+		"/Users/btmills/OneDrive/POS/Windows Tablet Setup Checklist.txt",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/controllers/metrics_controller.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/controllers/daily_grades_controller.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/daily_grades/index.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/daily_grades/show.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metrics/new.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/models/grade.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/db/migrate/20141024033117_create_daily_grades.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/db/migrate/20141010201220_create_metric_grades.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/lib/fitbitclient.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/models/grade_calc.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/assets/javascripts/application.js",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/db/migrate/20141007141840_create_notes.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metric_configs/index.json.jbuilder",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metric_configs/show.json.jbuilder",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metric_configs/show.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/config/environment.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/config/schedule.rb",
+		"/Users/btmills/Dropbox/dev/db/fnCalcDBTC.sql",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/db/schema.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metric_configs/_form.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/controllers/grade_configs_controller.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/grade_configs/index.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/grade_configs/edit.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/grade_configs/show.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/grade_configs/_form.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/db/migrate/20140820181516_create_grade_configs.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/grade_configs/new.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/notes/_form.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metric_configs/index.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/users/old.show.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metrics/index.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/lib/date_extensions.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/config/application.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/controllers/notes_controller.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/notes/new.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/models/note.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/users/new.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/lib/timeutilities.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metric_configs/new.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/shared/_error_messages.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metrics/show.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/users/edit.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/grade_configs/index.json.jbuilder",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/grade_configs/show.json.jbuilder",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/controllers/sessions_controller.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/metric_configs/OLD_index.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/db/migrate/20140820152931_add_index_to_metrics_date.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/config/initializers/extenstions.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/extensions/active_record_extension.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/users/index.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/controllers/static_pages_controller.rb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/static_pages/home.html.erb",
+		"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app/app/views/layouts/_footer.html.erb",
+		"/Users/btmills/.bash_profile",
+		"/Users/btmills/.profile"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/brandonmills/Dropbox/dev/ruby/rails_projects/qs_app",
+			"/Users/brandonmills/development/qs_app",
+			"/Users/btmills/Dropbox/dev/ruby/rails_projects/qs_app",
+			"/Users/btmills/Dropbox/dev/ruby/rails_projects"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"steps",
+			"extend Active",
+			"extend",
+			"existent",
+			"WILL_PAGINATE",
+			"Rails::Paths::Path",
+			"paginate",
+			"railties_load_path",
+			"paginate",
+			"railties_load_path",
+			"Rails:path",
+			"railties",
+			"railties_load_path",
+			"Mime::json",
+			"json",
+			"rspec",
+			"spro",
+			"rac",
+			"rack",
+			"gemfile",
+			"port",
+			"rvm",
+			"ffi",
+			"rubyzip",
+			"nokogiri",
+			"bcrypt",
+			"get",
+			"sleep",
+			"sample_data.rake",
+			"brandontmills@gmail.com",
+			"user.new",
+			"rvm",
+			"pull",
+			"get",
+			"new metric",
+			"add_action",
+			"to_f",
+			"value",
+			"<%= m_avg %>%",
+			".json",
+			"/1/user/",
+			".json",
+			"------> @hashToIterate",
+			"metrickey",
+			"user",
+			"metricKey",
+			"\"-------key = #{key}\"",
+			"#Rails",
+			"fitbitclient",
+			"endomondo",
+			"rvm",
+			"start",
+			"@datetoshow",
+			"find",
+			"grade_id",
+			"New User?",
+			"/",
+			"to",
+			"to_",
+			"to",
+			"to_",
+			"/60",
+			"amy",
+			"nil",
+			"nil?",
+			"metricgrade",
+			"weight",
+			"bold",
+			"logger.info",
+			"    <p class=\"text-center\">",
+			"center",
+			"<p",
+			"center",
+			"gc_weight",
+			"find_by",
+			"if @grad",
+			"objmc",
+			">\n",
+			"logger",
+			"form_for",
+			"@metricconfigs",
+			"workout rate",
+			"ruby",
+			"rake",
+			"head",
+			"==",
+			"ruby",
+			"d2eru9ovrokr58",
+			"iquantify",
+			"central",
+			"grade",
+			"metric_params",
+			"param",
+			"params",
+			"return false",
+			"params",
+			"metricdate",
+			"new_daily_grade_path",
+			".calculate",
+			"btn-large",
+			"btn-large btn-primary",
+			"Metric",
+			"MetricConfig",
+			"for",
+			"begin",
+			"find_or_create_by",
+			"generate_empty_daily_metrics",
+			"14.1",
+			"logger",
+			"to_d",
+			"@endDate",
+			"@startDate",
+			"refresh_metrics",
+			"fb",
+			"fit",
+			"fb",
+			"updatemetr",
+			"metricdate",
+			"section",
+			"nil",
+			"upsert2_0_3_metric_grades_sel_metric_id_set_created_a900576791",
+			"calcStandard",
+			"mg_percentage",
+			"mg_points",
+			"g_gradeid",
+			"metricId",
+			"gradeval",
+			"grade"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<%= m_avg %>",
+			"#logger.info",
+			"#logger",
+			"endDate",
+			"startDate",
+			"weight_mg_percentage",
+			"weight_mg_points",
+			"weight_g_gradeid",
+			"weight_metricId",
+			"st_grades",
+			"st_g_gradeid",
+			"st_mg_percentage",
+			"st_mg_percentvalue",
+			"st_mg_points",
+			"st_m_value",
+			"st_gc_weight",
+			"st_gc_goal",
+			"st_gc_row",
+			"logger",
+			"#logger.info",
+			"endDate",
+			"startDate",
+			"(metricname:",
+			"",
+			"user_id",
+			"metric_configs",
+			"metric_config",
+			"metric_configs",
+			"metricconfig",
+			"metric_configs",
+			"metricconfigs",
+			"metricconfig",
+			"BusinessLocationId = 134",
+			"(select blendeventid from blendevent where DisplayName = 'EntreFest')"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "qs_python.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 278.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

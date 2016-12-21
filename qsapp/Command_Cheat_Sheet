@@ -1,0 +1,12 @@
+Start Virtual Env
+(must be in same directory as manage.py)
+source qs/bin/activate
+
+Start Server
+python manage.py runserver
+
+After Model changes - database migrations
+python manage.py makemigrations qsapp
+
+Run Migrations
+python manage.py migrate qsapp

@@ -10,3 +10,18 @@ python manage.py makemigrations qsapp
 
 Run Migrations
 python manage.py migrate qsapp
+
+Push to GitHub
+git push -u origin master
+
+Git Status
+git status
+
+Push to Git
+$ git add --all .
+
+Commit to Git
+$ git commit -m "My branch comment here"
+
+qs = mysite (on DjangoGirls)
+qsapp = blog (on DjangoGirls)

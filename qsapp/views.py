@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def metrics_list(request):
+    return render(request, 'qsapp/metrics_list.html', {})

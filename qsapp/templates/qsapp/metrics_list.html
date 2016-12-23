@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Quantified Self</title>
+    </head>
+    <body>
+        <div>
+        {% for metric in metrics %}
+        	<div>
+        	<p>Metric Date: {{metric.metric_date}}</p>
+        	<h1><a href="brandonmills.com">{{metric.metric_config_id}}</a></h1>
+        	<p>{{ metric.value|linebreaksbr }}</p>
+        	</div>
+    	{% endfor %}
+        </div>
+    </body>
+</html>

@@ -23,5 +23,10 @@ $ git add --all .
 Commit to Git
 $ git commit -m "My branch comment here"
 
+Pull new code to pythonanywhere
+cd py_qs_app
+git pull
+
 qs = mysite (on DjangoGirls)
 qsapp = blog (on DjangoGirls)
+quantifiedself = djangogirls 

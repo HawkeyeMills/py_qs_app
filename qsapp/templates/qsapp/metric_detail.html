@@ -1,0 +1,12 @@
+{% extends 'qsapp/base.html' %}
+
+{% block content %}
+    <div class="metric">
+        {% if metric.metric_date %}
+            <div class="date">
+                {{ metric.metric_date }}
+            </div>
+        {% endif %}
+        <p>{{ metric.metric_config_id.metricname }} : {{ metric.value|linebreaksbr }}</p>
+    </div>
+{% endblock %}

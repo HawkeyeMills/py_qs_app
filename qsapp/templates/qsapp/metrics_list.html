@@ -1,16 +1,13 @@
-<html>
-    <head>
-        <title>Quantified Self</title>
-    </head>
-    <body>
-        <div>
-        {% for metric in metrics %}
-        	<div>
-        	<p>Metric Date: {{metric.metric_date}}</p>
-        	<h1><a href="brandonmills.com">{{metric.metric_config_id}}</a></h1>
-        	<p>{{ metric.value|linebreaksbr }}</p>
-        	</div>
-    	{% endfor %}
-        </div>
-    </body>
-</html>
+{% extends 'qsapp/base.html' %}
+
+{% block content %}
+	{% for metric in metrics %}
+		<div class="metric">
+			<div class="date">
+				<p>Metric Date: {{metric.metric_date}}</p>
+			</div>
+				<h3><a href="{% url 'metric_detail' pk=metric.pk %}">{{metric.metric_config_id.metricname}}</a></h3>
+				<p>{{ metric.value|linebreaksbr }}</p>
+		</div>
+	{% endfor %}
+{% endblock %}

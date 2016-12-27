@@ -19,12 +19,15 @@ from django.utils import timezone
 #        return self.title
 
 class DailyGrade(models.Model):
-    grade_id = models.ForeignKey('Grade', on_delete=models.CASCADE)
+    grade = models.ForeignKey('Grade', on_delete=models.CASCADE)
     points = models.DecimalField(max_digits=4, decimal_places=2)
     possible = models.DecimalField(max_digits=4, decimal_places=2)
     grade_date = models.DateTimeField(default=timezone.now)
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.grade
 
 class GradeCalc(models.Model):
     GRADE_CALCS = (
@@ -38,14 +41,17 @@ class GradeCalc(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(default=timezone.now)
 
+    def __str__(self):
+        return self.gradecalc
+
 class GradeConfig(models.Model):
-    metric_config_id = models.ForeignKey('MetricConfig', on_delete=models.CASCADE)
-    grade_calc_id = models.ForeignKey('GradeCalc', on_delete=models.CASCADE)
+    metric_config = models.ForeignKey('MetricConfig', on_delete=models.CASCADE)
+    grade_calc = models.ForeignKey('GradeCalc', on_delete=models.CASCADE)
     weight = models.DecimalField(max_digits=4, decimal_places=2, blank=False)
-    percentoftotal = models.DecimalField(max_digits=8, decimal_places=3)
+    percentoftotal = models.DecimalField(max_digits=8, decimal_places=3, blank=True, null=True)
     goal = models.CharField(max_length=255)
-    configtype = models.CharField(max_length=255)
-    note = models.TextField()
+    configtype = models.CharField(max_length=255, blank=True, null=True)
+    note = models.TextField(blank=True, null=True)
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(default=timezone.now)
 
@@ -71,36 +77,56 @@ class Grade(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(default=timezone.now)
 
+    def __str__(self):
+        return self.gradevalue
+
 class MetricConfig(models.Model):
-    user_id = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     metricname = models.CharField(max_length=255)
-    fitbitvalue = models.CharField(max_length=255)
+    fitbitvalue = models.CharField(max_length=255, blank=True)
     label = models.CharField(max_length = 255)
-    metrictype = models.CharField(max_length=255)
+    metrictype = models.ForeignKey('MetricType', on_delete=models.CASCADE)
     orderby = models.IntegerField()
     profiledisplay = models.BooleanField()
     updateable = models.BooleanField()
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(default=timezone.now)
 
+    def __str__(self):
+        return self.metricname
+
+class MetricType(models.Model):
+    metrictype = models.CharField(max_length=255, blank=True)
+    created_date = models.DateTimeField(default=timezone.now)
+    updated_date = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.metrictype
+
 class Metric(models.Model):
-    metric_config_id = models.ForeignKey('MetricConfig', on_delete=models.CASCADE)
-    metric_date = models.DateTimeField(default=timezone.now)
+    metric_config = models.ForeignKey('MetricConfig', on_delete=models.CASCADE)
+    metric_date = models.DateField(default=timezone.now)
     value = models.DecimalField(max_digits=10, decimal_places=2)
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(default=timezone.now)
 
+    def __str__(self):
+        return self.metric_config.metricname
+
 class MetricGrade(models.Model):
-    metric_id = models.ForeignKey('Metric', on_delete=models.CASCADE)
-    grade_id = models.ForeignKey('Grade', on_delete=models.CASCADE)
+    metric = models.ForeignKey('Metric', on_delete=models.CASCADE)
+    grade = models.ForeignKey('Grade', on_delete=models.CASCADE)
     points = models.DecimalField(max_digits=10, decimal_places=2)
     percentage = models.DecimalField(max_digits=3, decimal_places=2)
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(default=timezone.now)
 
+    def __str__(self):
+        return self.metric
+
 class Note(models.Model):
-    user_id = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     note = models.TextField()
-    note_date = models.DateTimeField(default=timezone.now)
+    note_date = models.DateField(default=timezone.now)
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(default=timezone.now)

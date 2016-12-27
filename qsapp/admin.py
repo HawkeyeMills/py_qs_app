@@ -23,3 +23,6 @@ admin.site.register(Metric)
 
 from .models import Note
 admin.site.register(Note)
+
+from .models import MetricType
+admin.site.register(MetricType)

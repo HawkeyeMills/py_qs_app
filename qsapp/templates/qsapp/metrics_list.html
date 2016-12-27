@@ -6,7 +6,7 @@
 			<div class="date">
 				<p>Metric Date: {{metric.metric_date}}</p>
 			</div>
-				<h3><a href="{% url 'metric_detail' pk=metric.pk %}">{{metric.metric_config_id.metricname}}</a></h3>
+				<h3><a href="{% url 'metric_detail' pk=metric.pk %}">{{metric.metric_config.metricname}}</a></h3>
 				<p>{{ metric.value|linebreaksbr }}</p>
 		</div>
 	{% endfor %}

@@ -1,3 +1,22 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+
+<script>
+//$.ajaxSetup({
+//  headers: {
+//    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+// }
+//});
+$(document).ready(function(){
+    $('#metricdate').change(function() {
+        metricdate.val($(this).val());
+        //var datevalue = $(this).val()
+        //$.get( '/fbmetrics', {id:"1", metricdate:datevalue} );
+        //window.location.reload();
+      });
+});
+//$(document).on('page:update', ready);
+</script>
+
 {% extends 'qsapp/base.html' %}
 
 {% block content %}
@@ -6,8 +25,8 @@
 			<div class="date">
 				<p>Metric Date: {{metric.metric_date}}</p>
 			</div>
-				<h3><a href="{% url 'metric_detail' pk=metric.pk %}">{{metric.metric_config.metricname}}</a></h3>
-				<p>{{ metric.value|linebreaksbr }}</p>
+				<p><a href="{% url 'metric_detail' pk=metric.pk %}">{{metric.metric_config.metricname}} : 
+				{{ metric.value|linebreaksbr }}</a></p>
 		</div>
 	{% endfor %}
 {% endblock %}

@@ -7,9 +7,9 @@
                 {{ metric.metric_date }}
             </div>
         {% endif %}
-        {% if user.is_authenticated %}
-     		<a class="btn btn-default" href="{% url 'metric_edit' pk=metric.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-		{% endif %}
         <p>{{ metric.metric_config.metricname }} : {{ metric.value|linebreaksbr }}</p>
+        {% if user.is_authenticated %}
+            <a class="btn btn-default" href="{% url 'metric_edit' pk=metric.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        {% endif %}
     </div>
 {% endblock %}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<script>
+        var i = 1;
+        $("#input_add").click(function() {
+            $("tbody tr:first").clone().find(".data_input").each(function() {
+                if ($(this).attr('class')== 'tr_clone_add btn data_input'){
+                    $(this).attr({
+                        'id': function(_, id) { return "remove_button" },
+                        'name': function(_, name) { return "name_remove" +i },
+                        'value': 'Remove'
+                    }).on("click", function(){
+                        var a = $(this).parent();
+                        var b= a.parent();
+                        i=i-1
+                        $('#id_form-TOTAL_FORMS').val(i);
+                        b.remove();
+
+                        $('.product-instances tr').each(function(index, value){
+                            $(this).find('.data_input').each(function(){
+                                $(this).attr({
+                                    'id': function (_, id) {
+                                        var idData= id;
+                                        var splitV= String(idData).split('-');
+                                        var fData= splitV[0];
+                                        var tData= splitV[2];
+                                        return fData+ "-" +index + "-" + tData
+                                    },
+                                    'name': function (_, name) {
+                                        var nameData= name;
+                                        var splitV= String(nameData).split('-');
+                                        var fData= splitV[0];
+                                        var tData= splitV[2];
+                                        return fData+ "-" +index + "-" + tData
+                                    }
+                                });
+                            })
+                        })
+                    })
+                }
+                else{
+                    $(this).attr({
+                        'id': function (_, id) {
+                            var idData= id;
+                            var splitV= String(idData).split('-');
+                            var fData= splitV[0];
+                            var tData= splitV[2];
+                            return fData+ "-" +i + "-" + tData
+                        },
+                        'name': function (_, name) {
+                            var nameData= name;
+                            var splitV= String(nameData).split('-');
+                            var fData= splitV[0];
+                            var tData= splitV[2];
+                            return fData+ "-" +i + "-" + tData
+                        }
+                    });
+
+                }
+            }).end().appendTo("tbody");
+            $('#id_form-TOTAL_FORMS').val(1+i);
+            i++;
+
+        });
+    </script>
+
+<html>
+<head>
+    <title>Multiformset Demo</title>
+    <script src="{{ STATIC_URL }}js/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery.formset.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(".inline.{{ metric_form.prefix }}").formset({
+                prefix: "{{ metric_form.prefix }}",
+            })
+        })
+    </script>
+</head>
+
+  <form action="" method="post" class="">
+  {% csrf_token %}
+  <h2> MetricConfigs :</h2>
+  {% for field in form %}
+    {{ field.errors }}
+    {{ field.label_tag }} : {{ field }}
+  {% endfor %}
+  {{ form.metrics.management_form }}
+
+  <h3> Metrics(s)</h3>
+  <table id="table-product">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>quantity</th>   
+        <th>price</th>
+      </tr>
+      </thead>
+      <tbody class="product-instances">
+      <tr>
+        <td>{{ form.metric }}</td>
+        <td>{{ form.metric }}</td>   
+        <td>{{ form.metric }}</td>
+        <td> <input id="input_add" type="button" name="add" value=" Add More " class="tr_clone_add btn data_input"> </td>
+      </tr>
+      </tbody>
+  {% endfor %}
+  </table>
+              <input type="submit" name="submit" class="button" value="Save"/>
+  </form>
+</html>

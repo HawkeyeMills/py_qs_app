@@ -22,7 +22,7 @@ class DailyGrade(models.Model):
     grade = models.ForeignKey('Grade', on_delete=models.CASCADE)
     points = models.DecimalField(max_digits=4, decimal_places=2)
     possible = models.DecimalField(max_digits=4, decimal_places=2)
-    grade_date = models.DateTimeField(default=timezone.now)
+    grade_date = models.DateField(default=timezone.now)
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(default=timezone.now)
 
@@ -88,6 +88,7 @@ class MetricConfig(models.Model):
     metrictype = models.ForeignKey('MetricType', on_delete=models.CASCADE)
     orderby = models.IntegerField()
     profiledisplay = models.BooleanField()
+    active = models.BooleanField(default=True)
     updateable = models.BooleanField()
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(default=timezone.now)
@@ -106,7 +107,7 @@ class MetricType(models.Model):
 class Metric(models.Model):
     metric_config = models.ForeignKey('MetricConfig', on_delete=models.CASCADE)
     metric_date = models.DateField(default=timezone.now)
-    value = models.DecimalField(max_digits=10, decimal_places=2)
+    value = models.DecimalField(max_digits=10, decimal_places=0)
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(default=timezone.now)
 
